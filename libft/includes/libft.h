@@ -16,8 +16,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdlib.h>
-# define BUFF_SIZE 1000
 
 typedef struct		s_list
 {
@@ -30,7 +28,7 @@ void				ft_putchar(char c);
 void				ft_putstr(char const *str);
 int					ft_atoi(char *str);
 char				*ft_strdup(const char *s1);
-int					ft_strlen(const char *str);
+size_t					ft_strlen(const char *str);
 char				*ft_strcpy(char *s1, char *s2);
 void				ft_putnbr(int n);
 void				*ft_memset(void *b, int c, size_t len);

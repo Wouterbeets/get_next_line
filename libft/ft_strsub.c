@@ -12,12 +12,23 @@
 
 #include "libft.h"
 
+#include <stdio.h>
+
+//int main()
+//{
+//
+//	static char	*str = "Un jour je serai, le meilleur dresseur !";
+//	printf("res = %s\n", ft_strsub(str, 8, 8));
+//	return (0);
+//}
+//
+
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
 	int		i;
 
-	if (s && start && len)
+	if (s && (int)len > -1)
 	{
 		i = 0;
 		str = (char *)malloc(sizeof(s));
@@ -30,5 +41,5 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		}
 		return (str);
 	}
-	return (NULL);
+	return (0);
 }
